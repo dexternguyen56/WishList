@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/textView_name"
+        android:layout_width="169dp"
+        android:layout_height="57dp"
+        android:padding="5dp"
+        android:text="Name"
+        android:textSize="35sp"
+        android:textStyle="bold"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_price"
+        android:layout_width="108dp"
+        android:layout_height="38dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="TextView"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_url"
+        android:layout_width="112dp"
+        android:layout_height="35dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:lines="1"
+        android:padding="5dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_price" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

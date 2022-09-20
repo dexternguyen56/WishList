@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="10dp"
+    >
+
+
+    <EditText
+        android:id="@+id/editText_name"
+        android:layout_width="98dp"
+        android:layout_height="41dp"
+        android:hint="name"
+        android:textSize="20sp"
+        android:layout_margin="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/editText_url"
+        app:layout_constraintStart_toStartOf="parent"></EditText>
+
+    <EditText
+        android:id="@+id/editText_url"
+        android:layout_width="251dp"
+        android:layout_height="0dp"
+        android:hint="url"
+        android:textSize="20sp"
+        android:layout_margin="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_submit"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"></EditText>
+
+    <EditText
+        android:id="@+id/editText_price"
+        android:layout_width="98dp"
+        android:layout_height="41dp"
+        android:imeOptions="actionDone"
+        android:textSize="20sp"
+        android:layout_margin="5dp"
+        android:hint="price"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/button_submit"
+        app:layout_constraintEnd_toEndOf="parent"></EditText>
+
+
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_margin="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/wishListRV"
+        android:layout_width="394dp"
+        android:layout_height="575dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/editText_name"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="-4dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
